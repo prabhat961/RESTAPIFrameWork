@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="apiProject">
+<listeners>
+	<listener class-name="utilities.Listener" />
+</listeners>
+	<test thread-count="5" name="RestapiProject">
+		<classes>
+			<class name="TestCases.AllEmployeeData" />
+			<class name="TestCases.SingleEmployeeData" />
+			<class name="TestCases.PostEmployeeRecord" />
+			<class name="TestCases.PutRecord" />
+			<class name="TestCases.DeleteEmployeeRecord" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
